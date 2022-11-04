@@ -1,0 +1,29 @@
+//crear
+### 
+POST http://localhost:9000/api/users HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"hola",
+    "age":"22",
+    "email":"si@uninorte"
+} 
+//mostrar todos
+###
+GET http://localhost:9000/api/users HTTP/1.1
+
+//mostrar uno 
+###
+GET http://localhost:9000/api/users/635dae6bcfd6b892e554125a HTTP/1.1
+
+### 
+PUT  http://localhost:9000/api/users/635dac0623a05a7ba9a725b3 HTTP/1.1
+Content-Type: application/json
+
+{
+    "name":"hol",
+    "age":"22",
+    "email":"si@uninorte"
+}
+###
+DELETE http://localhost:9000/api/users/635dac0623a05a7ba9a725b3 HTTP/1.1
